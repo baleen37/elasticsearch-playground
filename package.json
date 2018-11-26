@@ -1,0 +1,22 @@
+{
+  "name": "elasticsearch-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seeds": "node -r ts-node/register src/seeds/dump.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/elasticsearch": "^5.0.28",
+    "@types/faker": "^4.1.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.3"
+  },
+  "dependencies": {
+    "elasticsearch": "^15.1.1",
+    "faker": "^4.1.0"
+  }
+}

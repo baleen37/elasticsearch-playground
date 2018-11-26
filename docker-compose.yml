@@ -1,0 +1,17 @@
+version: '3.6'
+services:
+  elasticsearch:
+    image: elasticsearch:${TAG}
+    container_name: playground-elasticsearch
+    ports: ['9200:9200']
+    networks: ['stack']
+
+  kibana:
+    image: kibana:${TAG}
+    container_name: playground-kibana
+    ports: ['5601:5601']
+    networks: ['stack']
+    depends_on: ['elasticsearch']
+
+networks:
+  stack: {}
